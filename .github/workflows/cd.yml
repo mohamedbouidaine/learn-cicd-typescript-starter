@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    env:
+      DATABASE_URL: ${{ secrets.libsql://notely-db-mohamedbouidaine.aws-eu-west-1.turso.io }}  
 
     steps:
       - name: Check out code
